@@ -1,0 +1,1 @@
+Nothing really important here, just a simple app with visuals, some interaction. I havent finished the daily forecast because i was too eager to try out newer stuff. You can switch between degrees Fahrenheit or Celsius, and the little icons will change based on the weather of that city. If image file doesnt work you can edit the code inside js file. arrow points in wind direction

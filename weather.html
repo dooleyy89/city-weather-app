@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityWeather</title>
+    <link rel="stylesheet" href="wDesign.css"> 
+    <link rel="icon" href="images/splash.png" sizes="48x48" type="image/png">
+</head>
+
+<!-- Body contains background -->
+<body>
+    <div class="contents">
+        <h1>CityWeather🏙️</h1>
+        <p>Find the weather nowcast and forecast of any city</p>
+    </div>
+    <div class="cityentry">
+        <div class="cityent">
+            <input type="text" id="cityinput" placeholder="Enter City...">
+            <button type="button" id="finder">Search</button>
+            
+        </div>
+        <div class="tz">
+            <h1 id="timez"></h1>
+        </div>
+        <div class="units">
+            <button type="button" id="imperial">Fahrenheit: °F</button>
+            <button type="button" id="metric">Celsius: °C</button>
+        </div>
+    </div>
+    <!-- invalid city -->
+    <div class="invalid">
+        <h1>Invalid city. Check spelling.</h1>
+    </div>
+
+    <!-- main weather part -->
+    <div id="wthrContent" class="wthrContent">
+        <div class="weather">
+            <div class="temprow">
+                <img id="imgdesc" src="" alt="  ">
+                <div class="weather-text">
+                    <h1 id="cityname">Detroit</h1>
+                    <h2 id="temp">100°F</h2>
+                </div>
+                <div class="detail">
+                    <h1 id="wdesc"></h1>
+                    <h2 id="feels"></h2>
+                </div>
+            </div>
+            <div class="temprow2">
+                <div class="vl"></div>
+                
+                <div class="wind">
+                    <p>Wind</p>
+                    <pre id="wspeed"></pre>
+                    <hr id="wline">
+                    <pre id="wgust"></pre>
+                    <hr id="wline">
+                    <pre id="wdir"></pre>
+                    
+                </div>
+                <img id="dirimg" src="images/arrowd.png" alt="  ">
+                <div class="v2"></div>
+                <div class="humid">
+                    <p id="lowhi"></p>
+                    <p id="humidity"></p>
+                    <p id="visible"></p>
+                </div>
+            </div>
+        </div>
+        <table id="dailyforecast" class="dailyforecast">
+            <thead>
+                <th id="df">Weekly Forecast</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="day">Sun</td>
+                    <td id="ftemp">hot</td>
+                    <td id="fdesc">cloudy</td>
+                </tr>
+                <tr>
+                    <td id="day">Mon</td>
+                    <td id="ftemp">hot</td>
+                    <td id="fdesc">cloudy</td>
+                </tr>
+                <tr>
+                    <td id="day">Tue</td>
+                    <td id="ftemp">hot</td>
+                    <td id="fdesc">cloudy</td>
+                </tr>
+                <tr>
+                    <td id="day">Wed</td>
+                    <td id="ftemp">hot</td>
+                    <td id="fdesc">cloudy</td>
+                </tr>
+                <tr>
+                    <td id="day">Thu</td>
+                    <td id="ftemp">hot</td>
+                    <td id="fdesc">cloudy</td>
+                </tr>
+                <tr>
+                    <td id="day">Fri</td>
+                    <td id="ftemp">hot</td>
+                    <td id="fdesc">cloudy</td>
+                </tr>
+                <tr>
+                    <td id="day">Sat</td>
+                    <td id="ftemp">hot</td>
+                    <td id="fdesc">cloudy</td>
+                </tr>
+            </tbody>
+            
+        </table>
+        <!--- will fix later
+        <div id="dailyforecast" class="dailyforecast">
+            <h1 id="df">Weekly Forecast</h1>
+            <hr id="d1">
+            <p id="day">Sun </p>
+            <hr id="d1">
+            <p id="day">Mon </p>
+            <hr id="d1">
+            <p id="day">Tue </p>
+            <hr id="d1">
+            <p id="day">Wed </p>
+            <hr id="d1">
+            <p id="day">Thu </p>
+            <hr id="d1">
+            <p id="day">Fri </p>
+            <hr id="d1">
+            <p id="day">Sat </p>
+            <hr id="d1">
+        </div>
+        --->
+    </div>
+    <script src="wCode.js"></script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-size:cover;
+    background-position: center top;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url('images/bckgrnd2.jpg');
+
+}
+
+.contents {
+    background-image: url('images/winter.jpg');
+    background-size:100%;
+    background-position: center center;
+    background-color: rgb(31, 31, 49);
+    background-position-y:20%;
+    padding:55px;
+    color:rgb(202, 214, 255);
+    cursor:context-menu;
+    font-family: 'Arial', Courier, monospace;
+    font-weight:bold;
+    border-radius: 5px;
+    height: 190px;
+    text-indent: 14%;
+    font-size: 125%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.507);
+    text-shadow: 0 0 3px #000000;
+}
+.cityentry {
+    background-color: rgba(176, 213, 255, 0.473);
+    height: 75px;
+    align-items: center;
+    display: flex;
+}
+
+.cityent {  
+    margin-left:16%;
+    display: flex;
+    width: 300px;
+    height: 45%;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.units{
+    margin-left: 2%;
+    display:flex;
+    width:200px;
+    height:35%;
+    border: 2px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#metric{
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-weight: bold;
+    border-style: none;
+    padding:6px;
+    flex: 1 ;
+    cursor:pointer;
+    background-color: #001235;
+    color: white;
+}
+#imperial{
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-weight: bold;
+    border-style: none;
+    padding:6px;
+    flex: 1 ;
+    cursor:pointer;
+    background-color: rgb(65, 89, 131);
+    color: white;
+}
+
+
+input[type="text"] {
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    padding:6px;
+    width: 100%;
+    background-color: #c4d8ff;
+    border-style: none;
+}
+
+
+#finder[type="button"] {
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-weight: bold;
+    border-style: none;
+    padding:6px;
+    flex: 1 ;
+    cursor:pointer;
+    background-color: #001235;
+    color: white;
+}
+#finder[type="button"]:hover {
+    background-color: rgb(65, 89, 131);
+}
+.invalid {
+    margin-left: 25px;
+    color: rgba(255, 0, 0, 0.849);
+    font-family:'Corbel Light', Courier, monospace;
+    display:none;
+}
+.wthrContent {
+    background-color: #98bcff00;
+    margin-top: 7%;
+    margin-left: 20%;
+    height: 60vh;
+    display: flex;
+}
+
+.weather {
+    background-color: #98bcff54;
+    margin-left: 5%;
+    width: 480px;
+    height: 290px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;  /* Vertically center the image and text */
+}
+
+.dailyforecast {
+    background-color: #98bcff54;
+    width:300px;
+    border-radius: 35px;
+    margin-left: 75px;
+}
+#df{
+    color:#ffffff;
+    font-family: 'Yu Gothic UI Light', Courier, monospace;
+    text-align: center;
+    font-size: 25px;
+}
+#d1 {
+    height:1px;
+    width:85%;
+    background-color: #98bcff77;
+    border: none;
+}
+#day {
+    color:white;
+    font-family: 'Yu Gothic UI Light', Courier, monospace;
+}
+
+.temprow {
+    display: flex;
+    align-items: center;  /* Ensures vertical centering of both the image and text */
+}
+
+#imgdesc {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;  
+    object-fit:contain;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.weather-text {
+    display: flex;
+    flex-direction: column;  /* Stack the text vertically */
+    justify-content: center;  /* Vertically center the texts */
+}
+
+#temp {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Yu Gothic UI Light', Courier, monospace;
+    margin: 0;  /* Remove any default margin */
+}
+
+#cityname {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Yu Gothic UI Light', Courier, monospace;
+    margin: 0;  /* Remove any default margin */
+}
+
+
+
+#feels{
+    color: white;
+    font-family: 'Yu Gothic UI Light', Courier, monospace;
+    font-size: 25px;
+    margin:0;
+
+}
+
+#wdesc{
+    color: white;
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-size: 25px;
+    margin:0;
+
+}
+
+#timez{
+    color:white;
+    margin-left: 25px;
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-size: 25px;
+}
+
+.detail{
+    margin-left: 50px;
+}
+
+#lowhi{
+    margin-top: 50px;
+    color:white;
+    margin-left: 25px;
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-size: 20px;
+    
+}
+#humidity{
+    color:white;
+    margin-left: 25px;
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-size: 20px;
+}
+
+#visible{
+    color:white;
+    margin-left: 25px;
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-size: 20px;
+}
+
+.vl{
+    margin-top: 15px;
+    width: 2px;
+    height:170px;
+    background-color: #9abaff;
+}
+.v2{
+    margin-top: 30px;
+    margin-left:25px;
+    width: 2px;
+    height:150px;
+    background-color: #9abaff;
+}
+.temprow2{
+    display:flex;
+}
+
+.humid{
+    margin-left: 5px;
+    margin-top:-5px;
+}
+
+#wspeed{
+    color:white;
+    margin-left: 40px;
+    margin-top: -15px;
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-size: 20px;
+}
+
+#wgust{
+    color:white;
+    margin-left: 40px;
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#wdir{
+    color:white;
+    margin-left: 40px;
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+#wline{
+    height:1px;
+    width:230px;
+    background-color: #98bcff77;
+    border: none;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.wind {
+    color:white;
+    margin-left: 25px;
+    font-family: 'Yu Gothic UI', Courier, monospace;
+    font-size: 20px;
+}
+
+#dirimg{
+    width:25px;
+    height:25px;
+    margin-top: 142px;
+    margin-left: -25px;
+}
+@media (max-width: 768px) {
+    #temp {
+        font-size: 12vw;
+    }
+    #cityname {
+        font-size: 8vw;
+    }
+    #imgdesc {
+        width: 120px;  /* Reduce image size on smaller screens */
+        height: 120px;
+    }
+}

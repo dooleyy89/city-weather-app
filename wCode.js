@@ -41,7 +41,7 @@ function requestWeather() {
 
 async function cityData(city) {
     
-    const key = "b31d547a412122169da42d26d143303e";
+    const key = "----------------------------------";
     const base = "https://api.openweathermap.org/data/2.5/weather";
     const invalid = document.querySelector('.invalid');
     const img = document.getElementById('imgdesc');
